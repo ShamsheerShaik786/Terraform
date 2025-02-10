@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamsheer Shaik - DevOps Portfolio</title>
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin: 50px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        /* Projects Section */
+        .project-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            width: 300px;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        /* Reviews Section */
+        .review {
+            background: white;
+            padding: 15px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shamsheer Shaik</h1>
+        <p>DevOps Engineer | Docker | Kubernetes | AWS | Jenkins</p>
+    </header>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <h3>Voting App Deployment</h3>
+                <p>Built a voting app with Python backend, Selenium test cases, Redis, PostgreSQL, and a .NET application.</p>
+            </div>
+            <div class="project">
+                <h3>CI/CD Pipeline with Jenkins</h3>
+                <p>Configured a Jenkins CI/CD pipeline with functional testing and Ansible automation.</p>
+            </div>
+            <div class="project">
+                <h3>Netflix Clone on Kubernetes</h3>
+                <p>Deployed a Netflix-like streaming platform on a Kubernetes cluster with DevSecOps integration.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p>"Shamsheer's expertise in Docker and Kubernetes is impressive! His CI/CD implementation was seamless." - <b>Client A</b></p>
+        </div>
+        <div class="review">
+            <p>"Great experience working with Shamsheer. His Jenkins automation saved us hours of work." - <b>Client B</b></p>
+        </div>
+    </section>
+
+</body>
+</html>
